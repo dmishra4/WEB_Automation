@@ -1,0 +1,12 @@
+Report Name,Payment Volume and Value Report,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Report Generated date,07-12-2020,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Run Time,00:00:00,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Start Date/time of reporting period,2020-07-11 00:00:00 AST,,,,,,,,,,,,,,,,,,,,,,,,,,,
+End Date/time of reporting period,2020-07-11 23:59:59 AST,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Local Instrument,ALL,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Category Purpose Code,ALL,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,Total Volume of Payments by Status (of those sent),,,,,Total Volume of Payments by Status (of those received),,,,,,Total Value of Payments by Status (of those sent),,,,,Total Value of Payments received by the Participant (by status),,
+FI ID,FI Name,Participant ID,Participant Name,Funding Agent Account ID,Funding Agent Name,Currency,Total Volume of Payment Transactions sent/received,Total Volume of Payment Transactions sent,Total Volume of Payment Transactions received,Accepted,Accepted w/o posting,Rejected,Rejected by Participant,Rejected by System,Accepted,Accepted w/o posting,Rejected by Participant,Total Value of Payment Transactions Sent/Received,Total Value of Payments sent,Total Value of Payments received,Accepted,Accepted w/o posting,Rejected,Rejected by Participant,Rejected by System,Accepted,Accepted w/o posting,Rejected by Participant
+123456789,HSBC,SAALBI,SAALBI,,,SAR,1,1,0,1,0,0,0,0,0,0,0,20.5,20.5,0,20.5,0,0,0,0,0,0,0

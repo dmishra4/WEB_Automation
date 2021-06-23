@@ -1,0 +1,9 @@
+Report Name,Participant Settlement Report
+Report Generated Date,07/19/2020
+Run Time,10:01:14
+
+Settlement Cycle Date,07/16/2020
+Settlement Cycle ID,004
+
+FI ID,FI Name,Participant ID,Participant Name,Funding Agent Account ID,Funding Agent Name,Currency,Debit Cap,Number of Inward transactions,Value of Inward transactions,Number of Outward transactions,Value of Outward transactions,Net Position
+    123456789,HSBC,SAALBI,SAALBI,,,SAR,120000.00,0,0.00,0,0.00,0.00

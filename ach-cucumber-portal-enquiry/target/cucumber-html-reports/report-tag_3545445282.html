@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Tag: @ExternalEnquiry_ResultsOutcome</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>SAMA ACH PORTAL</td>
+              <td>1</td>
+            <td>27 Jul 2020, 16:02</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@ExternalEnquiry_ResultsOutcome</td>
+          <td      class="passed"    >15</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">15</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="47250561100">47.250</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1250356227.html">ExternalPortal_Enquiry_ResultsOutcome</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_3545445282.html">@ExternalEnquiry_ResultsOutcome</a>
+           <a href="report-tag_2341047396.html">@Ext_ValueTransactionEnquiryByHistory</a>
+      </div>
+
+  
+  <span class="lead-duration duration">47.250</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">User can inquire the Value Transaction Enquiry and view the result on screen by History</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">EnquiryStepDefinitions.beforeScenario(Scenario)</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Open browser <span class="argument">&quot;Firefox&quot;</span></span>
+  
+  <span class="lead-duration duration">5.567</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Login to <span class="argument">&quot;External&quot;</span> Portal under <span class="argument">&quot;%ENV%&quot;</span> environment with username as <span class="argument">&quot;dev_SAALBI_allAccess_user&quot;</span> and password as <span class="argument">&quot;dev_SAALBI_allAccess_user&quot;</span></span>
+  
+  <span class="lead-duration duration">13.479</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-4">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-4" class="collapse collapsable-details " >
+          
+          <pre><p>Open Browser</p><p>Successfully Login to External Portal in dev Environment</p></pre>
+        </div>
+      </div>
+      </div>
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1752421286.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-5" class="collapse collapsable-details">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-1752421286.png">
+      </div>
+    </div>
+  </div>
+                  <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+      <a>Attachment 2 (png)</a>
+      <a href="embeddings/embedding_-59664998.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-6" class="collapse collapsable-details">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-59664998.png">
+      </div>
+    </div>
+  </div>
+                  <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-7" class="collapsable-control">
+      <a>Attachment 3 (png)</a>
+      <a href="embeddings/embedding_931604775.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-7" class="collapse collapsable-details">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_931604775.png">
+      </div>
+    </div>
+  </div>
+        </div>
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Navigate to below mentioned menu in order to reach <span class="argument">&quot;Value Transaction Enquiry&quot;</span> page</span>
+  
+  <span class="lead-duration duration">9.011</span>
+
+</div>
+
+        
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>Reports &amp; Enquiry</td>
+                              </tr>
+                          <tr>
+                                  <td>Enquiries</td>
+                              </tr>
+                          <tr>
+                                  <td>Value Transaction Enquiry</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-8" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1913335766.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-8" class="collapse collapsable-details">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1913335766.png">
+      </div>
+    </div>
+  </div>
+        </div>
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Select <span class="argument">&quot;Advance&quot;</span> radio button</span>
+  
+  <span class="lead-duration duration">0.313</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Select <span class="argument">&quot;Historic&quot;</span> radio button</span>
+  
+  <span class="lead-duration duration">0.263</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The <span class="argument">&quot;Value Transaction Enquiry&quot;</span> page contains the following GUI items:</span>
+  
+  <span class="lead-duration duration">0.623</span>
+
+</div>
+
+        
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Date Start</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Date End</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Routing Number (Bank ID)</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Local Instrument</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Transaction Amount</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Transaction Status</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Reason Code</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Button</td>
+                                  <td>Submit</td>
+                                  <td>%Enabled%</td>
+                              </tr>
+                          <tr>
+                                  <td>Button</td>
+                                  <td>Clear Screen</td>
+                                  <td>%Enabled%</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-9" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-392351566.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-9" class="collapse collapsable-details">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-392351566.png">
+      </div>
+    </div>
+  </div>
+        </div>
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Enter below values in <span class="argument">&quot;Value Transaction Enquiry&quot;</span> page</span>
+  
+  <span class="lead-duration duration">4.006</span>
+
+</div>
+
+        
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>Date Start</td>
+                                  <td>%PreviousDate%</td>
+                              </tr>
+                          <tr>
+                                  <td>Date End</td>
+                                  <td>25/07/2020</td>
+                              </tr>
+                          <tr>
+                                  <td>Routing Number (Bank ID)</td>
+                                  <td>000000045</td>
+                              </tr>
+                          <tr>
+                                  <td>Local Instrument</td>
+                                  <td>Credit Transfer</td>
+                              </tr>
+                          <tr>
+                                  <td>Transaction Amount</td>
+                                  <td>5000</td>
+                              </tr>
+                          <tr>
+                                  <td>Transaction Status</td>
+                                  <td>Accept</td>
+                              </tr>
+                          <tr>
+                                  <td>Reason Code</td>
+                                  <td>0000</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-10" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1582713495.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-10" class="collapse collapsable-details">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1582713495.png">
+      </div>
+    </div>
+  </div>
+        </div>
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click the <span class="argument">&quot;Submit&quot;</span> button on <span class="argument">&quot;Value Transaction Enquiry&quot;</span> page</span>
+  
+  <span class="lead-duration duration">1.414</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-11" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_2132825903.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-11" class="collapse collapsable-details">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_2132825903.png">
+      </div>
+    </div>
+  </div>
+        </div>
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The <span class="argument">&quot;Value Transaction Enquiry&quot;</span> result table contains the following columns:</span>
+  
+  <span class="lead-duration duration">1.442</span>
+
+</div>
+
+        
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>Transaction ID</td>
+                                  <td>%NOTEMPTY%</td>
+                              </tr>
+                          <tr>
+                                  <td>Transaction Date/Time</td>
+                                  <td>%NOTEMPTY%</td>
+                              </tr>
+                          <tr>
+                                  <td>Sending R/T (Bank ID)</td>
+                                  <td>%NOTEMPTY%</td>
+                              </tr>
+                          <tr>
+                                  <td>Status</td>
+                                  <td>%NOTEMPTY%</td>
+                              </tr>
+                          <tr>
+                                  <td>Local Instrument</td>
+                                  <td>%NOTEMPTY%</td>
+                              </tr>
+                          <tr>
+                                  <td>Category Purpose Code</td>
+                                  <td>%NOTEMPTY%</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-12" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_2132825903.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-12" class="collapse collapsable-details">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_2132825903.png">
+      </div>
+    </div>
+  </div>
+        </div>
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click the <span class="argument">&quot;Details&quot;</span> button on <span class="argument">&quot;Value Transaction Enquiry&quot;</span> page</span>
+  
+  <span class="lead-duration duration">1.426</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-13" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1770642902.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-13" class="collapse collapsable-details">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-1770642902.png">
+      </div>
+    </div>
+  </div>
+        </div>
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">The <span class="argument">&quot;Transaction Details&quot;</span> page contains the following GUI items:</span>
+  
+  <span class="lead-duration duration">1.395</span>
+
+</div>
+
+        
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Transaction ID :</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Transaction Date/Time :</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Sending Participant :</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Sending Account :</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Sending R/T (Bank ID) :</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Receiving Participant :</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Receiving Account :</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Receiving R/T (Bank ID) :</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Status :</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Local Instrument :</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Category Purpose Code :</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Reason Code :</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Amount :</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Settlement Cycle ID :</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                          <tr>
+                                  <td>Label</td>
+                                  <td>Settlement Date :</td>
+                                  <td>%Displayed%</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-14" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1770642902.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-14" class="collapse collapsable-details">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-1770642902.png">
+      </div>
+    </div>
+  </div>
+        </div>
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click the <span class="argument">&quot;Close&quot;</span> button on <span class="argument">&quot;Transaction Details&quot;</span> page</span>
+  
+  <span class="lead-duration duration">1.375</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-15" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1588558324.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-15" class="collapse collapsable-details">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1588558324.png">
+      </div>
+    </div>
+  </div>
+        </div>
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Click the <span class="argument">&quot;Export to CSV&quot;</span> button on <span class="argument">&quot;Value Transaction Enquiry&quot;</span> page</span>
+  
+  <span class="lead-duration duration">1.403</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-16" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_1588558324.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-16" class="collapse collapsable-details">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1588558324.png">
+      </div>
+    </div>
+  </div>
+        </div>
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Columns name in the downloaded CSV file is same as <span class="argument">&quot;Value Transaction Enquiry&quot;</span> enquiry result screen</span>
+  
+  <span class="lead-duration duration">4.140</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Close the browser</span>
+  
+  <span class="lead-duration duration">1.386</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

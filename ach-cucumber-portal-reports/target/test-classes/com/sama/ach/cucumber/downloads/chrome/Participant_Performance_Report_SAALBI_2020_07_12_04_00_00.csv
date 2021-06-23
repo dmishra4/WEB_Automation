@@ -1,0 +1,8 @@
+Report Name,Participant Performance Report,,,,,,,,,,,,
+Report Generated Date/Time,07-12-2020 04:00,,,,,,,,,,,,
+Start Date/Time,2020-07-11 00:00:00 AST,,,,,,,,,,,,
+End Date/Time,2020-07-11 23:59:59 AST,,,,,,,,,,,,
+,,,,,,,,,,,,,
+Participant ID,Participant Name,Message Type,Sending Txn Count,Sending Avg System Time,Sending Max System Time,Sending Percentile System Time,Sending Avg Leg1 Processing Time,Sending Avg Response Time,Sending Avg Leg3 Processing Time,Receiving Txn Count,Receiving Avg Response Time,Receiving Max Response Time,Receiving Percentile Response Time
+    SAALBI,SAALBI,All Messages,1,90748,90748,90748,40601,4902661,50147,0,0,0,0
+    SAALBI,SAALBI,Credit Transfer (pacs.008),1,90748,90748,90748,40601,4902661,50147,0,0,0,0

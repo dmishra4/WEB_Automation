@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>SAMA ACH PORTAL</td>
+              <td>1</td>
+            <td>27 Aug 2020, 07:59</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">DisputeStepDefinitions.beforeScenario(Scenario)</td>
+              <td>1</td>
+              <td class="duration" data-value="1613600">0.001</td>
+              <td class="duration" data-value="1613600">0.001</td>
+              <td class="duration" data-value="1613600">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DisputeStepDefinitions.click_the_button_on_page(String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="463874100">0.463</td>
+              <td class="duration" data-value="463874100">0.463</td>
+              <td class="duration" data-value="463874100">0.463</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DisputeStepDefinitions.click_the_button_on_pop_up_screen_in_page(String,String,String)</td>
+              <td>2</td>
+              <td class="duration" data-value="1151306000">1.151</td>
+              <td class="duration" data-value="1151306000">1.807</td>
+              <td class="duration" data-value="2302612000">2.302</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DisputeStepDefinitions.close_the_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="1286882100">1.286</td>
+              <td class="duration" data-value="1286882100">1.286</td>
+              <td class="duration" data-value="1286882100">1.286</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DisputeStepDefinitions.enter_as_then_click_on_button(String,String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="796473900">0.796</td>
+              <td class="duration" data-value="796473900">0.796</td>
+              <td class="duration" data-value="796473900">0.796</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DisputeStepDefinitions.enter_below_values_in_page(String,String&gt;&gt;)</td>
+              <td>1</td>
+              <td class="duration" data-value="1353635500">1.353</td>
+              <td class="duration" data-value="1353635500">1.353</td>
+              <td class="duration" data-value="1353635500">1.353</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DisputeStepDefinitions.login_to_Portal_under_environment_with_username_as_and_password_as(String,String,String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="21878754900">21.878</td>
+              <td class="duration" data-value="21878754900">21.878</td>
+              <td class="duration" data-value="21878754900">21.878</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DisputeStepDefinitions.navigate_to_below_mentioned_menu_in_order_to_reach_page(String,String&gt;)</td>
+              <td>1</td>
+              <td class="duration" data-value="17138191700">17.138</td>
+              <td class="duration" data-value="17138191700">17.138</td>
+              <td class="duration" data-value="17138191700">17.138</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DisputeStepDefinitions.open_browser(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="8082071500">8.082</td>
+              <td class="duration" data-value="8082071500">8.082</td>
+              <td class="duration" data-value="8082071500">8.082</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DisputeStepDefinitions.the_page_contains_the_following_GUI_items(String,String&gt;&gt;)</td>
+              <td>1</td>
+              <td class="duration" data-value="2108518700">2.108</td>
+              <td class="duration" data-value="2108518700">2.108</td>
+              <td class="duration" data-value="2108518700">2.108</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DisputeStepDefinitions.verify_the_below_mentioned_confirmation_message_on_pop_up_screen(String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2348170500">2.348</td>
+              <td class="duration" data-value="2348170500">2.348</td>
+              <td class="duration" data-value="2348170500">2.348</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>11</td>
+            <td>12</td>
+            <td class="duration">4.813</td>
+            <td class="duration">21.878</td>
+            <td class="duration">57.760</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

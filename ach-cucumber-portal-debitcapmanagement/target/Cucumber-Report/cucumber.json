@@ -1,0 +1,264 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 720000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "DebitCapMgtStepDefinitions.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Update Debit Cap with valid values under Debit Cap Management page",
+        "description": "",
+        "id": "externalportal-debitcap-updatedebitcap;update-debit-cap-with-valid-values-under-debit-cap-management-page;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 48000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Open browser \"Chrome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Chrome\"",
+                  "offset": 13
+                }
+              ],
+              "location": "DebitCapMgtStepDefinitions.open_browser(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8100,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "Login to \"External\" Portal under \"%ENV%\" environment with username as \"dev_SAALBI_allAccess_user\" and password as \"dev_SAALBI_allAccess_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"External\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"%ENV%\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"dev_SAALBI_allAccess_user\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"dev_SAALBI_allAccess_user\"",
+                  "offset": 114
+                }
+              ],
+              "location": "DebitCapMgtStepDefinitions.login_to_Portal_under_environment_with_username_as_and_password_as(String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "Select \"\u003cParticipant_Name\u003e\" from Participant drop down list",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8700,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Navigate to below mentioned menu in order to reach \"Debit Cap Management\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Debit Cap Management\"",
+                  "offset": 51
+                }
+              ],
+              "location": "DebitCapMgtStepDefinitions.navigate_to_below_mentioned_menu_in_order_to_reach_page(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Service Request"
+                ]
+              },
+              {
+                "cells": [
+                  "Debit Cap Management"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7700,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Click the \"Change Debit Cap\" button on \"Debit Cap Management\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Change Debit Cap\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"Debit Cap Management\"",
+                  "offset": 39
+                }
+              ],
+              "location": "DebitCapMgtStepDefinitions.click_the_button_on_page(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5800,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "Enter below values in \"Debit Cap Management\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Debit Cap Management\"",
+                  "offset": 22
+                }
+              ],
+              "location": "DebitCapMgtStepDefinitions.enter_below_values_in_page(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Updated Debit Cap",
+                  "1010"
+                ]
+              },
+              {
+                "cells": [
+                  "Reason for Debit Cap Update",
+                  "Business Requirements"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15100,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "Click the \"Submit\" button on \"Debit Cap Management\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Submit\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"Debit Cap Management\"",
+                  "offset": 29
+                }
+              ],
+              "location": "DebitCapMgtStepDefinitions.click_the_button_on_page(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14300,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "Click the \"Yes\" button on \"Debit Cap Management\" pop up screen",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Yes\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"Debit Cap Management\"",
+                  "offset": 26
+                }
+              ],
+              "location": "DebitCapMgtStepDefinitions.click_the_button_on_pop_up_screen(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10300,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "Verify the below mentioned confirmation message",
+            "match": {
+              "location": "DebitCapMgtStepDefinitions.verify_the_below_mentioned_confirmation_message(String)"
+            },
+            "keyword": "Then ",
+            "doc_string": {
+              "line": 24,
+              "value": "Debit Cap Limit: The request is successfully submitted for approvals. The request will be reviewed and actioned."
+            }
+          },
+          {
+            "result": {
+              "duration": 4200,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "Close the browser",
+            "match": {
+              "location": "DebitCapMgtStepDefinitions.close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@INT_DebitCap"
+          },
+          {
+            "name": "@INT_DebitCap_Valid"
+          }
+        ]
+      }
+    ],
+    "name": "ExternalPortal_DebitCap_UpdateDebitCap",
+    "description": "",
+    "id": "externalportal-debitcap-updatedebitcap",
+    "keyword": "Feature",
+    "uri": "./src/test/resources/com/sama/ach/cucumber/features/003_InternalPortal_DebitCap_UpdateDebitCap.feature",
+    "tags": [
+      {
+        "name": "@INT_DebitCap",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

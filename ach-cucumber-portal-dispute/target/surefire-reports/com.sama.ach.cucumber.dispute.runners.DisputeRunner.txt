@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.sama.ach.cucumber.dispute.runners.DisputeRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 61.637 s - in com.sama.ach.cucumber.dispute.runners.DisputeRunner

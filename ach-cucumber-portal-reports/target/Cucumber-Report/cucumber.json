@@ -1,0 +1,551 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 822300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ReportsStepDefinitions.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 378,
+        "name": "User views the Participant Settlement Report in CSV format and the output field names are as per specification",
+        "description": "",
+        "id": "02-externalportal-reports-requestreport;user-views-the-participant-settlement-report-in-csv-format-and-the-output-field-names-are-as-per-specification;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created\nfrom chrome not reachable\n  (Session info: chrome\u003d80.0.3987.87)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:25:53\u0027\nSystem info: host: \u0027DESKTOP-8V8E038\u0027, ip: \u0027192.168.1.102\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x00660C83+1707139]\n\tOrdinal0 [0x005C68F1+1075441]\n\tOrdinal0 [0x0053DE72+515698]\n\tOrdinal0 [0x00537CA8+490664]\n\tOrdinal0 [0x0053839B+492443]\n\tOrdinal0 [0x005392F5+496373]\n\tOrdinal0 [0x00534F05+478981]\n\tOrdinal0 [0x0053ECA0+519328]\n\tOrdinal0 [0x004ECA67+182887]\n\tOrdinal0 [0x004EBDDD+179677]\n\tOrdinal0 [0x004E9D4B+171339]\n\tOrdinal0 [0x004D1D4A+73034]\n\tOrdinal0 [0x004D2DC0+77248]\n\tOrdinal0 [0x004D2D59+77145]\n\tOrdinal0 [0x005DBB67+1162087]\n\tGetHandleVerifier [0x006FA966+508998]\n\tGetHandleVerifier [0x006FA6A4+508292]\n\tGetHandleVerifier [0x0070F7B7+594583]\n\tGetHandleVerifier [0x006FB1D6+511158]\n\tOrdinal0 [0x005D402C+1130540]\n\tOrdinal0 [0x005DD4CB+1168587]\n\tOrdinal0 [0x005DD633+1168947]\n\tOrdinal0 [0x005F5B35+1268533]\n\tBaseThreadInitThunk [0x76F06359+25]\n\tRtlGetAppContainerNamedObjectPath [0x774D7C24+228]\n\tRtlGetAppContainerNamedObjectPath [0x774D7BF4+180]\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\r\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\r\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\r\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:157)\r\n\tat com.sama.ach.cucumber.poc.utils.CommonFunctions.openBrowser(CommonFunctions.java:129)\r\n\tat com.sama.ach.cucumber.reports.stepdefs.ReportsStepDefinitions.open_browser(ReportsStepDefinitions.java:48)\r\n\tat ✽.Open browser \"Chrome\"(./src/test/resources/com/sama/ach/cucumber/features/002_ExternalPortal_Reports_RequestReport.feature:310)\r\n",
+              "duration": 17157587600,
+              "status": "failed"
+            },
+            "line": 310,
+            "name": "Open browser \"Chrome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Chrome\"",
+                  "offset": 13
+                }
+              ],
+              "location": "ReportsStepDefinitions.open_browser(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15400,
+              "status": "skipped"
+            },
+            "line": 311,
+            "name": "Login to \"External\" Portal under \"%ENV%\" environment with username as \"dev_SAALBI_allAccess_user\" and password as \"dev_SAALBI_allAccess_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"External\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"%ENV%\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"dev_SAALBI_allAccess_user\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"dev_SAALBI_allAccess_user\"",
+                  "offset": 114
+                }
+              ],
+              "location": "ReportsStepDefinitions.login_to_Portal_under_environment_with_username_as_and_password_as(String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11800,
+              "status": "skipped"
+            },
+            "line": 312,
+            "name": "Navigate to below mentioned menu in order to reach \"Request a Report\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Request a Report\"",
+                  "offset": 51
+                }
+              ],
+              "location": "ReportsStepDefinitions.navigate_to_below_mentioned_menu_in_order_to_reach_page(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Reports \u0026 Enquiry"
+                ]
+              },
+              {
+                "cells": [
+                  "Request a Report"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6200,
+              "status": "skipped"
+            },
+            "line": 318,
+            "name": "Select \"Participant Settlement Report\" from \"Request a Report\" dropdown list in \"Request a Report\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Participant Settlement Report\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"Request a Report\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"Request a Report\"",
+                  "offset": 80
+                }
+              ],
+              "location": "ReportsStepDefinitions.select_from_dropdown_list_in_page(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9700,
+              "status": "skipped"
+            },
+            "line": 319,
+            "name": "Click the \"Select\" button on \"Request a Report\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Select\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"Request a Report\"",
+                  "offset": 29
+                }
+              ],
+              "location": "ReportsStepDefinitions.click_the_button_on_page(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5900,
+              "status": "skipped"
+            },
+            "line": 320,
+            "name": "The \"Participant Settlement Report\" page contains the following GUI items:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Participant Settlement Report\"",
+                  "offset": 4
+                }
+              ],
+              "location": "ReportsStepDefinitions.the_page_contains_the_following_GUI_items(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Label",
+                  "Participant ID",
+                  "%Displayed%"
+                ]
+              },
+              {
+                "cells": [
+                  "Label",
+                  "Settlement Date",
+                  "%Displayed%"
+                ]
+              },
+              {
+                "cells": [
+                  "Label",
+                  "Settlement Cycle ID",
+                  "%Displayed%"
+                ]
+              },
+              {
+                "cells": [
+                  "Label",
+                  "Currency ISO Code",
+                  "%Displayed%"
+                ]
+              },
+              {
+                "cells": [
+                  "Label",
+                  "Content Format",
+                  "%Displayed%"
+                ]
+              },
+              {
+                "cells": [
+                  "Button",
+                  "Submit",
+                  "%Enabled%"
+                ]
+              },
+              {
+                "cells": [
+                  "Button",
+                  "Clear Screen",
+                  "%Enabled%"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9200,
+              "status": "skipped"
+            },
+            "line": 331,
+            "name": "Enter below values in \"Participant Settlement Report\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Participant Settlement Report\"",
+                  "offset": 22
+                }
+              ],
+              "location": "ReportsStepDefinitions.enter_below_values_in_page(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Settlement Date",
+                  "16/07/2020"
+                ]
+              },
+              {
+                "cells": [
+                  "Settlement Cycle ID",
+                  "001"
+                ]
+              },
+              {
+                "cells": [
+                  "Currency ISO Code",
+                  "SAR"
+                ]
+              },
+              {
+                "cells": [
+                  "Content Format",
+                  "CSV"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7300,
+              "status": "skipped"
+            },
+            "line": 339,
+            "name": "Click the \"Submit\" button on \"Participant Settlement Report\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Submit\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"Participant Settlement Report\"",
+                  "offset": 29
+                }
+              ],
+              "location": "ReportsStepDefinitions.click_the_button_on_page(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6700,
+              "status": "skipped"
+            },
+            "line": 340,
+            "name": "Verify the below mentioned confirmation message is displayed on \"Request a Report\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Request a Report\"",
+                  "offset": 64
+                }
+              ],
+              "location": "ReportsStepDefinitions.verify_the_below_mentioned_confirmation_message_is_displayed_on_page(String,String)"
+            },
+            "keyword": "Then ",
+            "doc_string": {
+              "line": 341,
+              "value": "Your request is successfully submitted, Please find the report using the Report Id #### in the Requested Report section."
+            }
+          },
+          {
+            "result": {
+              "duration": 9900,
+              "status": "skipped"
+            },
+            "line": 344,
+            "name": "Navigate to below mentioned menu in order to reach \"Requested Reports\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Requested Reports\"",
+                  "offset": 51
+                }
+              ],
+              "location": "ReportsStepDefinitions.navigate_to_below_mentioned_menu_in_order_to_reach_page(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Requested Reports"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6400,
+              "status": "skipped"
+            },
+            "line": 349,
+            "name": "Select \"Participant Settlement Report\" from \"Requested Reports\" dropdown list in \"Requested Reports\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Participant Settlement Report\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"Requested Reports\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"Requested Reports\"",
+                  "offset": 81
+                }
+              ],
+              "location": "ReportsStepDefinitions.select_from_dropdown_list_in_page(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6000,
+              "status": "skipped"
+            },
+            "line": 350,
+            "name": "Click the \"Select\" button on \"Requested Reports\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Select\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"Requested Reports\"",
+                  "offset": 29
+                }
+              ],
+              "location": "ReportsStepDefinitions.click_the_button_on_page(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5900,
+              "status": "skipped"
+            },
+            "line": 351,
+            "name": "The \"Requested Reports\" table contains the following columns:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Requested Reports\"",
+                  "offset": 4
+                }
+              ],
+              "location": "ReportsStepDefinitions.the_table_contains_the_following_columns(String,String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "No",
+                  "%NOTEMPTY%"
+                ]
+              },
+              {
+                "cells": [
+                  "Reports",
+                  "%NOTEMPTY%"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5800,
+              "status": "skipped"
+            },
+            "line": 357,
+            "name": "Click the \"Download\" button on \"Requested Reports\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Download\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"Requested Reports\"",
+                  "offset": 31
+                }
+              ],
+              "location": "ReportsStepDefinitions.click_the_button_on_page(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6800,
+              "status": "skipped"
+            },
+            "line": 358,
+            "name": "Downloaded CSV file should display below mentioned columns for \"Participant Settlement Report\" under \"Requested Reports\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Participant Settlement Report\"",
+                  "offset": 63
+                },
+                {
+                  "val": "\"Requested Reports\"",
+                  "offset": 101
+                }
+              ],
+              "location": "ReportsStepDefinitions.downloaded_CSV_file_should_display_below_mentioned_columns_for_under(String,String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "FI ID"
+                ]
+              },
+              {
+                "cells": [
+                  "FI Name"
+                ]
+              },
+              {
+                "cells": [
+                  "Participant ID"
+                ]
+              },
+              {
+                "cells": [
+                  "Participant Name"
+                ]
+              },
+              {
+                "cells": [
+                  "Funding Agent Account ID"
+                ]
+              },
+              {
+                "cells": [
+                  "Funding Agent Name"
+                ]
+              },
+              {
+                "cells": [
+                  "Currency"
+                ]
+              },
+              {
+                "cells": [
+                  "Debit Cap"
+                ]
+              },
+              {
+                "cells": [
+                  "Number of Inward transactions"
+                ]
+              },
+              {
+                "cells": [
+                  "Value of Inward transactions"
+                ]
+              },
+              {
+                "cells": [
+                  "Number of Outward transactions"
+                ]
+              },
+              {
+                "cells": [
+                  "Value of Outward transactions"
+                ]
+              },
+              {
+                "cells": [
+                  "Net Position"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16900,
+              "status": "skipped"
+            },
+            "line": 375,
+            "name": "Close the browser",
+            "match": {
+              "location": "ReportsStepDefinitions.close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@02_05_Ext_RequestaReport_ParticipantSettlementReport"
+          }
+        ]
+      }
+    ],
+    "name": "02_ExternalPortal_Reports_RequestReport",
+    "description": "",
+    "id": "02-externalportal-reports-requestreport",
+    "keyword": "Feature",
+    "uri": "./src/test/resources/com/sama/ach/cucumber/features/002_ExternalPortal_Reports_RequestReport.feature",
+    "tags": []
+  }
+]
